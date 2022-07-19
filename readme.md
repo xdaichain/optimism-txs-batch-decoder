@@ -16,7 +16,7 @@ And now it's ready to use!
 ## Program ouput
 - Number of batched transactions.
 - How much users paid.
-- Cost of batch sumbission *(in other words how much users supposed to paid)*.
+- Cost of batch submission *(in other words how much users supposed to paid)*.
 - Difference between these to numbers in percents.
 
 ![Here's also supposed to be image. ](https://snipboard.io/A6D4Tv.jpg)
