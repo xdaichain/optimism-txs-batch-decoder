@@ -1,0 +1,15 @@
+[package]
+name = "batch_decoder"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ethers = { version = "0.13.0", features = ["ws", "rustls"] }
+tokio = { version = "1.19.2", features = ["full"] }
+eyre = { version = "0.6.8" }
+byteorder = { version = "1.4.3" }
+flate2 = { version = "1.0.24" }
+serde_json = { version = "1.0.82" }
+dotenv = { version = "0.15.0" }
