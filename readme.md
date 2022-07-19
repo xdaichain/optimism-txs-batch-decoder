@@ -11,7 +11,7 @@ And now it's ready to use!
 
 ## Program input
 - L1 transaction hash of batch.
-![Here's supposed to be image.](https://snipboard.io/ATbpsJ.jpg)
+![Here's supposed to be image.](https://snipboard.io/JdqpsB.jpg)
 
 ## Program ouput
 - Number of batched transactions.
