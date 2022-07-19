@@ -3,7 +3,7 @@ Batch decoder for optimism rollup.
 ## How to setup
 First things first, download the source code.
 ```shell
-git clone https://github.com/SliceOfKekus/batch_decoder.git
+git clone https://github.com/SliceOfKekus/batch-decoder.git
 ```
 Next step is setting environment variables. Set `MAINNET_URL` and `OPTIMISM_URL` using any public network endpoints for mainnet and optimism respectively in `.env.example` file and change it to `.env`.
 
