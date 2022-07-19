@@ -1,4 +1,4 @@
-# batch_decoder
+# Batch decoder
 Batch decoder for optimism rollup.
 ## How to setup
 First things first, download the source code.
