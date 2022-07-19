@@ -1,5 +1,5 @@
 # Batch decoder
-Batch decoder for optimism rollup.
+Batch decoder for [Optimism Rollup](https://github.com/ethereum-optimism/optimism).
 ## How to setup
 First things first, download the source code.
 ```shell
