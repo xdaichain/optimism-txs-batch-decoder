@@ -15,6 +15,28 @@ pub struct Batch
     _receipt: Option<TransactionReceipt>,
 }
 
+pub fn calc_calldata_gas_cost(tx: &Transaction) -> U256
+{
+    let calldata = tx.input.as_ref();
+    let mut zeroes: u32 = 0;
+    let mut ones: u32 = 0;
+    let overhead: u32 = 2100;
+
+    calldata.iter().for_each(|byte|
+    {
+        if byte.gt(&0)
+        {
+            ones += 1;
+        }
+        else
+        {
+            zeroes += 1;
+        }
+    });
+
+    return U256::from((zeroes * 4) + ((ones + 68) * 16) + overhead);
+}
+
 impl Batch
 {
     pub fn get_tx(&self) -> Transaction
