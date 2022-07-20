@@ -8,7 +8,6 @@ use crate::batch::Batch;
 
 pub struct TransactionProvider
 {
-    pub _optimism: Provider<Http>,
     pub _mainnet: Provider<Http>
 }
 
@@ -20,10 +19,8 @@ impl TransactionProvider
 
         let mainnet: Provider<Http> = Provider::<Http>::try_from(&env::var("MAINNET_URL").unwrap())
                                         .expect("could not instantiate HTTP MAINNET Provider");
-        let optimism: Provider<Http> = Provider::<Http>::try_from(&env::var("OPTIMISM_URL").unwrap())
-                                        .expect("could not instantiate HTTP OPTIMISM Provider");
 
-        return Self { _mainnet: mainnet, _optimism: optimism };
+        return Self { _mainnet: mainnet };
     }
 
     pub async fn get_batch(&self, hash: H256) -> Result<Batch, ProviderError>
