@@ -5,7 +5,7 @@ First things first, download the source code.
 ```shell
 git clone https://github.com/SliceOfKekus/batch-decoder.git
 ```
-Next step is setting environment variables. Set `MAINNET_URL` using any public network endpoints for mainnet in `.env.example` file and change it to `.env`.
+Next step is setting environment variable. Set `MAINNET_URL` using any public network endpoints for mainnet in `.env.example` file and change it to `.env`.
 
 And now it's ready to use!
 
