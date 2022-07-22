@@ -21,8 +21,8 @@ impl TransactionManager
     pub async fn get_batch(&mut self, tx: H256) -> &Self
     {
         self._batch = Some(self._provider.get_batch(tx).await.unwrap());
-
-        return self;
+        
+        self
     }
 
     pub fn decode_batch(&self) -> Vec<Transaction>
